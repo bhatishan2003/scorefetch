@@ -1,0 +1,979 @@
+            </div>
+           </div>
+          </li>
+          <li class="cb-lst-mtch cb-lst-dom">
+           <div style="display:inline-block">
+            <div class="cb-mtch-all cb-nt-live cb-nt-today">
+             <a href="/live-cricket-scores/131834/tbc-vs-tbc-1st-semi-final-icc-womens-t20-world-cup-east-asia-pacific-qualifier" target="_self" title="TBC v TBC, 1st Semi-Final - Upcoming">
+              <span class="cb-mm-mtch-tm">
+               TBC vs TBC
+              </span>
+              <span class="cb-mm-liv-tag">
+              </span>
+             </a>
+             <div class="cb-mm-mtch-nm">
+              1st Semi-Final
+             </div>
+            </div>
+           </div>
+          </li>
+          <li class="cb-lst-mtch cb-lst-dom">
+           <div style="display:inline-block">
+            <div class="cb-mtch-all cb-nt-live cb-nt-today">
+             <a href="/live-cricket-scores/131845/tbc-vs-tbc-2nd-semi-final-icc-womens-t20-world-cup-east-asia-pacific-qualifier" target="_self" title="TBC v TBC, 2nd Semi-Final - Upcoming">
+              <span class="cb-mm-mtch-tm">
+               TBC vs TBC
+              </span>
+              <span class="cb-mm-liv-tag">
+              </span>
+             </a>
+             <div class="cb-mm-mtch-nm">
+              2nd Semi-Final
+             </div>
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="cb-col cb-col-100" id="strip_wrapper">
+     <div class="pull-left ad-unit" id="large_strip">
+     </div>
+     <div class="pull-right ad-unit" id="small_strip">
+     </div>
+     <div class="pull-left ad-unit" id="super_strip">
+     </div>
+    </div>
+    <div class="cb-nav-main cb-col-100 cb-col cb-bg-white">
+     <nav class="cb-nav-bar" role="navigation">
+      <a class="cb-nav-tab active" href="/cricket-match/live-scores" target="_self" title="Cricbuzz Live Scores">
+       Current Matches
+      </a>
+      <a class="cb-nav-tab" href="/cricket-schedule/series/all" target="_self" title="Series Schedule">
+       Current &amp; Future Series
+      </a>
+      <a class="cb-nav-tab" href="/cricket-schedule/upcoming-series/international" target="_self" title="Cricket Schedule">
+       Matches By Day
+      </a>
+      <a class="cb-nav-tab" href="/cricket-team" target="_self" title="Teams Schedule">
+       Teams
+      </a>
+      <a class="cb-nav-tab" href="/cricket-scorecard-archives" target="_self" title="Cricket Scorecard Archives">
+       Series Archive
+      </a>
+     </nav>
+    </div>
+    <div class="cb-col cb-col-100 cb-bg-white" ng-init="active_match_type= 'all-tab'; seriesFilter='none';">
+     <div class="cb-nav-main cb-bg-white">
+      <h1 class="cb-nav-hdr cb-font-24 line-ht30">
+       Live Cricket Score
+      </h1>
+      <nav class="cb-nav-bar" gtm-label="live scores">
+       <a class="cb-nav-tab cb-ranking-nav" href="/cricket-match/live-scores" id="live-tab" ng-class="{'active':'live' === 'live'}" title="Live Matches">
+        Live
+       </a>
+       <a class="cb-nav-tab cb-ranking-nav" href="/cricket-match/live-scores/recent-matches" id="recent-tab" ng-class="{'active':'live' === 'recent'}" title="Recent Matches">
+        Recent
+       </a>
+       <a class="cb-nav-tab cb-ranking-nav" href="/cricket-match/live-scores/upcoming-matches" id="upcoming-tab" ng-class="{'active':'live' === 'upcoming'}" title="Upcoming Matches">
+        Upcoming
+       </a>
+      </nav>
+     </div>
+     <div class="cb-col cb-col-67 cb-scrd-lft-col">
+      <div class="cb-col cb-col-100 cb-rank-tabs">
+       <nav gtm-label="live scores">
+        <a class="cb-nav-pill-1 cb-font-12 ct-on-tab-click" ctscreenname="matches|live|All" href="javascript:void(0)" id="all-tab" ng-class="{'active':active_match_type == 'all-tab'}" ng-click="active_match_type = 'all-tab';" title="All Matches">
+         All
+        </a>
+        <a class="cb-nav-pill-1 cb-font-12 ct-on-tab-click" ctscreenname="matches|live|league" href="javascript:void(0)" id="league-tab" ng-class="{'active':active_match_type == 'league-tab'}" ng-click="active_match_type = 'league-tab';" title="League">
+         League
+        </a>
+        <a class="cb-nav-pill-1 cb-font-12 ct-on-tab-click" ctscreenname="matches|live|domestic" href="javascript:void(0)" id="domestic-tab" ng-class="{'active':active_match_type == 'domestic-tab'}" ng-click="active_match_type = 'domestic-tab';" title="Domestic">
+         Domestic
+        </a>
+        <a class="cb-nav-pill-1 cb-font-12 ct-on-tab-click" ctscreenname="matches|live|women" href="javascript:void(0)" id="women-tab" ng-class="{'active':active_match_type == 'women-tab'}" ng-click="active_match_type = 'women-tab';" title="Women">
+         Women
+        </a>
+       </nav>
+       <div class="cb-sptr disp-flex" style="margin-left: -20px; margin-right: -10px; padding-left: 20px;">
+       </div>
+       <div class="cb-col cb-col-100 cb-plyr-tbody cb-rank-hdr cb-lv-main" ng-cloak="" ng-show="seriesFilter == 'fantasy' ? ((active_match_type == 'league-tab' || active_match_type == 'all-tab') &amp;&amp; ('' == true)) : seriesFilter == 'liveStream' ? ((active_match_type == 'league-tab' || active_match_type == 'all-tab') &amp;&amp; ('' == true)) : (active_match_type == 'league-tab' || active_match_type == 'all-tab')">
+        <h2 class="cb-lv-grn-strip text-bold cb-lv-scr-mtch-hdr disp-flex cb-justify-between align-center">
+         <a href="" title="Caribbean Premier League 2025">
+          CARIBBEAN PREMIER LEAGUE 2025
+         </a>
+         <div>
+         </div>
+        </h2>
+        <div class="cb-mtch-lst cb-col cb-col-100 cb-tms-itm">
+         <div class="cb-col-100 cb-col cb-schdl cb-billing-plans-text">
+          <div>
+           <h3 class="cb-lv-scr-mtch-hdr inline-block">
+            <a class="text-hvr-underline text-bold" href="/live-cricket-scores/116786/snp-vs-br-27th-match-caribbean-premier-league-2025" title="St Kitts and Nevis Patriots vs Barbados Royals">
+             St Kitts and Nevis Patriots vs Barbados Royals,
+            </a>
+           </h3>
+           <span class="text-gray">
+            27th Match
+           </span>
+           <div class="text-gray">
+            <span ng-if="(1757631600000 | date:'dd/MM/yyyy') == (1757649730000 | date:'dd/MM/yyyy')">
+             Today
+            </span>
+            <span ng-bind="(1757631600000 |date: 'MMM d')" ng-if="(1757631600000 | date:'dd/MM/yyyy') != (1757649730000 | date:'dd/MM/yyyy')">
+            </span>
+            <span>
+             •
+            </span>
+            <span ng-bind="1757631600000 |date:'h:mm a'">
+            </span>
+            <span class="text-gray">
+             at Bridgetown, Barbados, Kensington Oval
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="cb-col-100 cb-col cb-schdl">
+          <a class="cb-lv-scrs-well cb-lv-scrs-well-complete" href="/live-cricket-scores/116786/snp-vs-br-27th-match-caribbean-premier-league-2025" title="St Kitts and Nevis Patriots vs Barbados Royals 27th Match">     
+           <div class="cb-col">
+            <div class="cb-scr-wll-chvrn cb-lv-scrs-col">
+             <div class="cb-hmscg-bat-txt cb-ovr-flo">
+              <div class="cb-ovr-flo cb-hmscg-tm-nm">
+               SNP
+              </div>
+              <div class="cb-ovr-flo" style="display:inline-block; width:140px">
+               150-7 (20 Ovs)
+              </div>
+             </div>
+             <div class="cb-hmscg-bwl-txt">
+              <div class="cb-ovr-flo cb-hmscg-tm-nm">
+               BR
+              </div>
+              <div class="cb-ovr-flo" style="display:inline-block; width:140px">
+               149-7 (20 Ovs)
+              </div>
+             </div>
+             <div class="cb-text-complete">
+              St Kitts and Nevis Patriots won by 1 run
+             </div>
+            </div>
+            <div class="cb-scr-wll-chvrn">
+             <div class="cb-ico cb-lv-scr-chvrn-bg">
+             </div>
+            </div>
+           </div>
+          </a>
+         </div>
+         <nav class="cb-col-100 cb-col padt5">
+          <a class="cb-text-link cb-mtch-lnks" href="/live-cricket-scores/116786/snp-vs-br-27th-match-caribbean-premier-league-2025" title="Live Score">
+           Live Score
+          </a>
+          <a class="cb-text-link cb-mtch-lnks" href="/live-cricket-scorecard/116786/snp-vs-br-27th-match-caribbean-premier-league-2025" title="Scorecard">
+           Scorecard
+          </a>
+          <a class="cb-text-link cb-mtch-lnks" href="/cricket-full-commentary/116786/snp-vs-br-27th-match-caribbean-premier-league-2025" title="Full Commentary">
+           Full Commentary
+          </a>
+          <a class="cb-text-link cb-mtch-lnks" href="/cricket-match-news/116786/snp-vs-br-27th-match-caribbean-premier-league-2025" title="News">
+           News
+          </a>
+         </nav>
+        </div>
+       </div>
+       <div class="cb-col cb-col-100 cb-plyr-tbody cb-rank-hdr cb-lv-main" ng-cloak="" ng-show="seriesFilter == 'fantasy' ? ((active_match_type == 'domestic-tab' || active_match_type == 'all-tab') &amp;&amp; ('' == true)) : seriesFilter == 'liveStream' ? ((active_match_type == 'domestic-tab' || active_match_type == 'all-tab') &amp;&amp; ('' == true)) : (active_match_type == 'domestic-tab' || active_match_type == 'all-tab')">
+        <h2 class="cb-lv-grn-strip text-bold cb-lv-scr-mtch-hdr disp-flex cb-justify-between align-center">
+         <a href="" title="Duleep Trophy 2025">
+          DULEEP TROPHY 2025
+         </a>
+         <div>
+         </div>
+        </h2>
+        <div class="cb-mtch-lst cb-col cb-col-100 cb-tms-itm">
+         <div class="cb-col-100 cb-col cb-schdl cb-billing-plans-text">
+          <div>
+           <h3 class="cb-lv-scr-mtch-hdr inline-block">
+            <a class="text-hvr-underline text-bold" href="/live-cricket-scores/123688/szone-vs-czone-final-duleep-trophy-2025" title="South Zone vs Central Zone">
+             South Zone vs Central Zone,
+            </a>
+           </h3>
+           <span class="text-gray">
+            Final
+           </span>
+           <div class="text-gray">
+            <span ng-if="(1757563200000 | date:'dd/MM/yyyy') == (1757649730000 | date:'dd/MM/yyyy')">
+             Today
+            </span>
+            <span ng-bind="(1757563200000 |date: 'MMM d')" ng-if="(1757563200000 | date:'dd/MM/yyyy') != (1757649730000 | date:'dd/MM/yyyy')">
+            </span>
+            <span>
+             -
+            </span>
+            <span ng-if="(1757934000000 | date:'dd/MM/yyyy') == (1757649730000 | date:'dd/MM/yyyy')">
+             Today
+            </span>
+            <span ng-bind="(1757934000000 |date: 'MMM d')" ng-if="(1757934000000 | date:'dd/MM/yyyy') != (1757649730000 | date:'dd/MM/yyyy')">
+            </span>
+            <span>
+             •
+            </span>
+            <span ng-bind="1757563200000 |date:'h:mm a'">
+            </span>
+            <span class="text-gray">
+             at Bengaluru, BCCI Centre of Excellence Ground
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="cb-col-100 cb-col cb-schdl">
+          <a class="cb-lv-scrs-well cb-lv-scrs-well-live" href="/live-cricket-scores/123688/szone-vs-czone-final-duleep-trophy-2025" title="South Zone vs Central Zone Final">
+           <div class="cb-col">
+            <div class="cb-scr-wll-chvrn cb-lv-scrs-col">
+             <div class="cb-hmscg-bwl-txt cb-ovr-flo">
+              <div class="cb-ovr-flo cb-hmscg-tm-nm">
+               SZON..
+              </div>
+              <div class="cb-ovr-flo" style="display:inline-block; width:140px">
+               149
+              </div>
+             </div>
+             <div class="cb-hmscg-bat-txt">
+              <div class="cb-ovr-flo cb-hmscg-tm-nm">
+               CZON..
+              </div>
+              <div class="cb-ovr-flo" style="display:inline-block; width:140px">
+               50-0
+              </div>
+             </div>
+             <div class="cb-text-live">
+              Day 2: 1st Session - Central Zone trail by 99 runs
+             </div>
+            </div>
+            <div class="cb-scr-wll-chvrn">
+             <div class="cb-ico cb-lv-scr-chvrn-bg">
+             </div>
+            </div>
+           </div>
+          </a>
+         </div>
+         <nav class="cb-col-100 cb-col padt5">
+          <a class="cb-text-link cb-mtch-lnks" href="/live-cricket-scores/123688/szone-vs-czone-final-duleep-trophy-2025" title="Live Score">
+           Live Score
+          </a>
+          <a class="cb-text-link cb-mtch-lnks" href="/live-cricket-scorecard/123688/szone-vs-czone-final-duleep-trophy-2025" title="Scorecard">
+           Scorecard
+          </a>
+          <a class="cb-text-link cb-mtch-lnks" href="/cricket-full-commentary/123688/szone-vs-czone-final-duleep-trophy-2025" title="Full Commentary">
+           Full Commentary
+          </a>
+          <a class="cb-text-link cb-mtch-lnks" href="/cricket-match-news/123688/szone-vs-czone-final-duleep-trophy-2025" title="News">
+           News
+          </a>
+         </nav>
+        </div>
+       </div>
+       <div class="cb-col cb-col-100 cb-plyr-tbody cb-rank-hdr cb-lv-main" ng-cloak="" ng-show="seriesFilter == 'fantasy' ? ((active_match_type == 'women-tab' || active_match_type == 'all-tab') &amp;&amp; ('' == true)) : seriesFilter == 'liveStream' ? ((active_match_type == 'women-tab' || active_match_type == 'all-tab') &amp;&amp; ('' == true)) : (active_match_type == 'women-tab' || active_match_type == 'all-tab')">
+        <h2 class="cb-lv-grn-strip text-bold cb-lv-scr-mtch-hdr disp-flex cb-justify-between align-center">
+         <a href="" title="ICC Womens T20 World Cup East Asia Pacific Qualifier 2025">
+          ICC WOMENS T20 WORLD CUP EAST ASIA PACIFIC QUALIFIER 2025
+         </a>
+         <div>
+         </div>
+        </h2>
+        <div class="cb-mtch-lst cb-col cb-col-100 cb-tms-itm">
+         <div class="cb-col-100 cb-col cb-schdl cb-billing-plans-text">
+          <div>
+           <h3 class="cb-lv-scr-mtch-hdr inline-block">
+            <a class="text-hvr-underline text-bold" href="/live-cricket-scores/131818/wsmw-vs-pngw-12th-match-group-b-icc-womens-t20-world-cup-east-asia-pacific-qualifier-2025" title="Samoa Women vs Papua New Guinea Women">
+             Samoa Women vs Papua New Guinea Women,
+            </a>
+           </h3>
+           <span class="text-gray">
+            12th Match, Group B
+           </span>
+           <div class="text-gray">
+            <span ng-if="(1757640600000 | date:'dd/MM/yyyy') == (1757649730000 | date:'dd/MM/yyyy')">
+             Today
+            </span>
+            <span ng-bind="(1757640600000 |date: 'MMM d')" ng-if="(1757640600000 | date:'dd/MM/yyyy') != (1757649730000 | date:'dd/MM/yyyy')">
+            </span>
+            <span>
+             •
+            </span>
+            <span ng-bind="1757640600000 |date:'h:mm a'">
+            </span>
+            <span class="text-gray">
+             at Suva, Albert Park 2
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="cb-col-100 cb-col cb-schdl">
+          <a class="cb-lv-scrs-well cb-lv-scrs-well-live" href="/live-cricket-scores/131818/wsmw-vs-pngw-12th-match-group-b-icc-womens-t20-world-cup-east-asia-pacific-qualifier-2025" title="Samoa Women vs Papua New Guinea Women 12th Match, Group B">
+           <div class="cb-col">
+            <div class="cb-scr-wll-chvrn cb-lv-scrs-col">
+             <div class="cb-hmscg-bat-txt cb-ovr-flo">
+              <div class="cb-ovr-flo cb-hmscg-tm-nm">
+               WSMW
+              </div>
+              <div class="cb-ovr-flo" style="display:inline-block; width:140px">
+               120-9 (20 Ovs)
+              </div>
+             </div>
+             <div class="cb-hmscg-bwl-txt">
+              <div class="cb-ovr-flo cb-hmscg-tm-nm">
+               PNGW
+              </div>
+              <div class="cb-ovr-flo" style="display:inline-block; width:140px">
+              </div>
+             </div>
+             <div class="cb-text-live">
+              Innings Break
+             </div>
+            </div>
+            <div class="cb-scr-wll-chvrn">
+             <div class="cb-ico cb-lv-scr-chvrn-bg">
+             </div>
+            </div>
+           </div>
+          </a>
+         </div>
+         <nav class="cb-col-100 cb-col padt5">
+          <a class="cb-text-link cb-mtch-lnks" href="/live-cricket-scores/131818/wsmw-vs-pngw-12th-match-group-b-icc-womens-t20-world-cup-east-asia-pacific-qualifier-2025" title="Live Score">
+           Live Score
+          </a>
+          <a class="cb-text-link cb-mtch-lnks" href="/live-cricket-scorecard/131818/wsmw-vs-pngw-12th-match-group-b-icc-womens-t20-world-cup-east-asia-pacific-qualifier-2025" title="Scorecard">
+           Scorecard
+          </a>
+          <a class="cb-text-link cb-mtch-lnks" href="/cricket-full-commentary/131818/wsmw-vs-pngw-12th-match-group-b-icc-womens-t20-world-cup-east-asia-pacific-qualifier-2025" title="Full Commentary">
+           Full Commentary
+          </a>
+          <a class="cb-text-link cb-mtch-lnks" href="/cricket-match-news/131818/wsmw-vs-pngw-12th-match-group-b-icc-womens-t20-world-cup-east-asia-pacific-qualifier-2025" title="News">
+           News
+          </a>
+         </nav>
+        </div>
+        <div class="cb-mtch-lst cb-col cb-col-100 cb-tms-itm">
+         <div class="cb-col-100 cb-col cb-schdl cb-billing-plans-text">
+          <div>
+           <h3 class="cb-lv-scr-mtch-hdr inline-block">
+            <a class="text-hvr-underline text-bold" href="/live-cricket-scores/131807/vanw-vs-fijiw-11th-match-group-a-icc-womens-t20-world-cup-east-asia-pacific-qualifier-2025" title="Vanuatu Women vs Fiji Women">     
+             Vanuatu Women vs Fiji Women,
+            </a>
+           </h3>
+           <span class="text-gray">
+            11th Match, Group A
+           </span>
+           <div class="text-gray">
+            <span ng-if="(1757640600000 | date:'dd/MM/yyyy') == (1757649730000 | date:'dd/MM/yyyy')">
+             Today
+            </span>
+            <span ng-bind="(1757640600000 |date: 'MMM d')" ng-if="(1757640600000 | date:'dd/MM/yyyy') != (1757649730000 | date:'dd/MM/yyyy')">
+            </span>
+            <span>
+             •
+            </span>
+            <span ng-bind="1757640600000 |date:'h:mm a'">
+            </span>
+            <span class="text-gray">
+             at Suva, Albert Park 1
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="cb-col-100 cb-col cb-schdl">
+          <a class="cb-lv-scrs-well cb-lv-scrs-well-live" href="/live-cricket-scores/131807/vanw-vs-fijiw-11th-match-group-a-icc-womens-t20-world-cup-east-asia-pacific-qualifier-2025" title="Vanuatu Women vs Fiji Women 11th Match, Group A">
+           <div class="cb-col">
+            <div class="cb-scr-wll-chvrn cb-lv-scrs-col">
+             <div class="cb-hmscg-bwl-txt cb-ovr-flo">
+              <div class="cb-ovr-flo cb-hmscg-tm-nm">
+               VANW
+              </div>
+              <div class="cb-ovr-flo" style="display:inline-block; width:140px">
+               149-3 (20 Ovs)
+              </div>
+             </div>
+             <div class="cb-hmscg-bat-txt">
+              <div class="cb-ovr-flo cb-hmscg-tm-nm">
+               FIJI..
+              </div>
+              <div class="cb-ovr-flo" style="display:inline-block; width:140px">
+               32-4 (10 Ovs)
+              </div>
+             </div>
+             <div class="cb-text-live">
+              Fiji Women need 118 runs in 60 balls
+             </div>
+            </div>
+            <div class="cb-scr-wll-chvrn">
+             <div class="cb-ico cb-lv-scr-chvrn-bg">
+             </div>
+            </div>
+           </div>
+          </a>
+         </div>
+         <nav class="cb-col-100 cb-col padt5">
+          <a class="cb-text-link cb-mtch-lnks" href="/live-cricket-scores/131807/vanw-vs-fijiw-11th-match-group-a-icc-womens-t20-world-cup-east-asia-pacific-qualifier-2025" title="Live Score">
+           Live Score
+          </a>
+          <a class="cb-text-link cb-mtch-lnks" href="/live-cricket-scorecard/131807/vanw-vs-fijiw-11th-match-group-a-icc-womens-t20-world-cup-east-asia-pacific-qualifier-2025" title="Scorecard">
+           Scorecard
+          </a>
+          <a class="cb-text-link cb-mtch-lnks" href="/cricket-full-commentary/131807/vanw-vs-fijiw-11th-match-group-a-icc-womens-t20-world-cup-east-asia-pacific-qualifier-2025" title="Full Commentary">
+           Full Commentary
+          </a>
+          <a class="cb-text-link cb-mtch-lnks" href="/cricket-match-news/131807/vanw-vs-fijiw-11th-match-group-a-icc-womens-t20-world-cup-east-asia-pacific-qualifier-2025" title="News">
+           News
+          </a>
+         </nav>
+        </div>
+        <div class="cb-mtch-lst cb-col cb-col-100 cb-tms-itm">
+         <div class="cb-col-100 cb-col cb-schdl cb-billing-plans-text">
+          <div>
+           <h3 class="cb-lv-scr-mtch-hdr inline-block">
+            <a class="text-hvr-underline text-bold" href="/live-cricket-scores/131801/jpnw-vs-phiw-10th-match-group-b-icc-womens-t20-world-cup-east-asia-pacific-qualifier-2025" title="Japan Women vs Philippines Women"> 
+             Japan Women vs Philippines Women,
+            </a>
+           </h3>
+           <span class="text-gray">
+            10th Match, Group B
+           </span>
+           <div class="text-gray">
+            <span ng-if="(1757626200000 | date:'dd/MM/yyyy') == (1757649730000 | date:'dd/MM/yyyy')">
+             Today
+            </span>
+            <span ng-bind="(1757626200000 |date: 'MMM d')" ng-if="(1757626200000 | date:'dd/MM/yyyy') != (1757649730000 | date:'dd/MM/yyyy')">
+            </span>
+            <span>
+             •
+            </span>
+            <span ng-bind="1757626200000 |date:'h:mm a'">
+            </span>
+            <span class="text-gray">
+             at Suva, Albert Park 2
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="cb-col-100 cb-col cb-schdl">
+          <a class="cb-lv-scrs-well cb-lv-scrs-well-complete" href="/live-cricket-scores/131801/jpnw-vs-phiw-10th-match-group-b-icc-womens-t20-world-cup-east-asia-pacific-qualifier-2025" title="Japan Women vs Philippines Women 10th Match, Group B">
+           <div class="cb-col">
+            <div class="cb-scr-wll-chvrn cb-lv-scrs-col">
+             <div class="cb-hmscg-bat-txt cb-ovr-flo">
+              <div class="cb-ovr-flo cb-hmscg-tm-nm">
+               JPNW
+              </div>
+              <div class="cb-ovr-flo" style="display:inline-block; width:140px">
+               158-4 (20 Ovs)
+              </div>
+             </div>
+             <div class="cb-hmscg-bwl-txt">
+              <div class="cb-ovr-flo cb-hmscg-tm-nm">
+               PHIW
+              </div>
+              <div class="cb-ovr-flo" style="display:inline-block; width:140px">
+               47 (16.1 Ovs)
+              </div>
+             </div>
+             <div class="cb-text-complete">
+              Japan Women won by 111 runs
+             </div>
+            </div>
+            <div class="cb-scr-wll-chvrn">
+             <div class="cb-ico cb-lv-scr-chvrn-bg">
+             </div>
+            </div>
+           </div>
+          </a>
+         </div>
+         <nav class="cb-col-100 cb-col padt5">
+          <a class="cb-text-link cb-mtch-lnks" href="/live-cricket-scores/131801/jpnw-vs-phiw-10th-match-group-b-icc-womens-t20-world-cup-east-asia-pacific-qualifier-2025" title="Live Score">
+           Live Score
+          </a>
+          <a class="cb-text-link cb-mtch-lnks" href="/live-cricket-scorecard/131801/jpnw-vs-phiw-10th-match-group-b-icc-womens-t20-world-cup-east-asia-pacific-qualifier-2025" title="Scorecard">
+           Scorecard
+          </a>
+          <a class="cb-text-link cb-mtch-lnks" href="/cricket-full-commentary/131801/jpnw-vs-phiw-10th-match-group-b-icc-womens-t20-world-cup-east-asia-pacific-qualifier-2025" title="Full Commentary">
+           Full Commentary
+          </a>
+          <a class="cb-text-link cb-mtch-lnks" href="/cricket-match-news/131801/jpnw-vs-phiw-10th-match-group-b-icc-womens-t20-world-cup-east-asia-pacific-qualifier-2025" title="News">
+           News
+          </a>
+         </nav>
+        </div>
+        <div class="cb-mtch-lst cb-col cb-col-100 cb-tms-itm">
+         <div class="cb-col-100 cb-col cb-schdl cb-billing-plans-text">
+          <div>
+           <h3 class="cb-lv-scr-mtch-hdr inline-block">
+            <a class="text-hvr-underline text-bold" href="/live-cricket-scores/131790/idnw-vs-cisw-9th-match-group-a-icc-womens-t20-world-cup-east-asia-pacific-qualifier-2025" title="Indonesia Women vs Cook Islands Women">
+             Indonesia Women vs Cook Islands Women,
+            </a>
+           </h3>
+           <span class="text-gray">
+            9th Match, Group A
+           </span>
+           <div class="text-gray">
+            <span ng-if="(1757626200000 | date:'dd/MM/yyyy') == (1757649730000 | date:'dd/MM/yyyy')">
+             Today
+            </span>
+            <span ng-bind="(1757626200000 |date: 'MMM d')" ng-if="(1757626200000 | date:'dd/MM/yyyy') != (1757649730000 | date:'dd/MM/yyyy')">
+            </span>
+            <span>
+             •
+            </span>
+            <span ng-bind="1757626200000 |date:'h:mm a'">
+            </span>
+            <span class="text-gray">
+             at Suva, Albert Park 1
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="cb-col-100 cb-col cb-schdl">
+          <a class="cb-lv-scrs-well cb-lv-scrs-well-complete" href="/live-cricket-scores/131790/idnw-vs-cisw-9th-match-group-a-icc-womens-t20-world-cup-east-asia-pacific-qualifier-2025" title="Indonesia Women vs Cook Islands Women 9th Match, Group A">
+           <div class="cb-col">
+            <div class="cb-scr-wll-chvrn cb-lv-scrs-col">
+             <div class="cb-hmscg-bat-txt cb-ovr-flo">
+              <div class="cb-ovr-flo cb-hmscg-tm-nm">
+               IDNW
+              </div>
+              <div class="cb-ovr-flo" style="display:inline-block; width:140px">
+               170-4 (20 Ovs)
+              </div>
+             </div>
+             <div class="cb-hmscg-bwl-txt">
+              <div class="cb-ovr-flo cb-hmscg-tm-nm">
+               CISW
+              </div>
+              <div class="cb-ovr-flo" style="display:inline-block; width:140px">
+               50 (13.2 Ovs)
+              </div>
+             </div>
+             <div class="cb-text-complete">
+              Indonesia Women won by 120 runs
+             </div>
+            </div>
+            <div class="cb-scr-wll-chvrn">
+             <div class="cb-ico cb-lv-scr-chvrn-bg">
+             </div>
+            </div>
+           </div>
+          </a>
+         </div>
+         <nav class="cb-col-100 cb-col padt5">
+          <a class="cb-text-link cb-mtch-lnks" href="/live-cricket-scores/131790/idnw-vs-cisw-9th-match-group-a-icc-womens-t20-world-cup-east-asia-pacific-qualifier-2025" title="Live Score">
+           Live Score
+          </a>
+          <a class="cb-text-link cb-mtch-lnks" href="/live-cricket-scorecard/131790/idnw-vs-cisw-9th-match-group-a-icc-womens-t20-world-cup-east-asia-pacific-qualifier-2025" title="Scorecard">
+           Scorecard
+          </a>
+          <a class="cb-text-link cb-mtch-lnks" href="/cricket-full-commentary/131790/idnw-vs-cisw-9th-match-group-a-icc-womens-t20-world-cup-east-asia-pacific-qualifier-2025" title="Full Commentary">
+           Full Commentary
+          </a>
+          <a class="cb-text-link cb-mtch-lnks" href="/cricket-match-news/131790/idnw-vs-cisw-9th-match-group-a-icc-womens-t20-world-cup-east-asia-pacific-qualifier-2025" title="News">
+           News
+          </a>
+         </nav>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="cb-col cb-col-33 cb-col-rt">
+      <div class="ad-unit cb-col cb-col-100" id="mpu" style="min-height:250px;margin-bottom:20px;">
+      </div>
+      <div class="cb-col cb-col-100 cb-sr-hist-pad" gtm-label="Commentary" id="latest-vid-mod">
+       <h4 class="cb-mdl-hdr">
+        LATEST CRICKET VIDEOS
+       </h4>
+       <div class="cb-col cb-col-100 cb-mid-wrp">
+        <a class="suggested-video-gtm" gtm-label="Cricbuzz Live: BAN v HKC, Asia Cup 2025 | Post match show|142802" href="/cricket-videos/142802/cricbuzz-live-ban-v-hkc-asia-cup-2025-post-match-show" target="_self" title="Cricbuzz Live: BAN v HKC, Asia Cup 2025 | Post match show">
+         <div class="cb-pos-rel">
+          <img alt="Cricbuzz Live: BAN v HKC, Asia Cup 2025 | Post match show" class="cb-suggested-vid-img suggested-video-gtm" gtm-label="Cricbuzz Live: BAN v HKC, Asia Cup 2025 | Post match show|142802" height="164" src="https://static.cricbuzz.com/a/img/v1/290x164/i1/c750704/cricbuzz-live-ban-v-hkc-asia.jpg" title="Cricbuzz Live: BAN v HKC, Asia Cup 2025 | Post match show" width="290">
+           <div class="cb-bkg-lin-grad cb-grad-lyo cb-hgt-72">
+            <div class="cb-pos-rel cb-pad-lft-rt cb-gap-12 align-center cb-single-operator-block" style="bottom:-30px;height: 40%;">
+             <div class="text-white align-center disp-flex">
+              ▶
+             </div>
+             <div>
+              <h4 class="text-white text-hvr-underline cb-subtext cb-font-14 cb-font-w-400" gtm-label="Cricbuzz Live: BAN v HKC, Asia Cup 2025 | Post match show|142802" style="max-width: 246px;">
+               Cricbuzz Live: BAN v HKC, Asia Cup 2025 | Post match show
+              </h4>
+             </div>
+            </div>
+           </div>
+          </img>
+         </div>
+        </a>
+       </div>
+       <div class="cb-col cb-col-100 cb-mid-wrp">
+        <a class="suggested-video-gtm" gtm-label="SL, AFG को B'desh से रहना होगा सावधान: Murali Kartik|142831" href="/cricket-videos/142831/sri-lanka-afghanistan-need-to-be-wary-of-bangladesh-murali-kartik" target="_sellf" title="SL, AFG को B'desh से रहना होगा सावधान: Murali Kartik">
+         <div class="cb-pos-rel">
+          <img alt="SL, AFG को B'desh से रहना होगा सावधान: Murali Kartik" class="cb-suggested-vid-img suggested-video-gtm" gtm-label="SL, AFG को B'desh से रहना होगा सावधान: Murali Kartik|142831" height="164" src="https: ://static.cricbuzz.com/a/img/v1/290x164/i1/c750862/sri-lanka-afghanistan-need-to.jpg" title="SL, AFG को B'desh से रहना होगा सावधान: Murali Kartik" width="290"/>
+          <div class="cb-vid-duration">
+           4:54
+          </div>
+          <div class="cb-bkg-lin-grad cb-grad-lyo cb-hgt-72">
+           <div class="cb-pos-rel cb-pad-lft-rt cb-gap-12 align-center cb-single-operator-block" style="bottom:-30px;height: 40%;">
+            <div class="text-white align-center disp-flex">
+             ▶
+            </div>
+            <div>
+             <h4 class="text-white text-hvr-underline cb-subtext cb-font-14 cb-font-w-400" gtm-label="SL, AFG को B'desh से रहना होगा सावधान: Murali Kartik|142831" style="max-width: 246px;">
+              SL, AFG को B'desh से रहना होगा सावधान: Murali Kartik
+             </h4>
+            </div>
+           </div>
+          </div>
+         </div>
+        </a>
+       </div>
+       <div class="cb-col cb-col-100 cb-mid-wrp">
+        <a class="suggested-video-gtm" gtm-label="Asia Cup: Pakistan vs Oman, Preview|142829" href="/cricket-videos/142829/asia-cup-pakistan-vs-oman-preview" target="_self" title="Asia Cup: Pakistan vs Oman, Preview">  
+         <div class="cb-pos-rel">
+          <img alt="Asia Cup: Pakistan vs Oman, Preview" class="cb-suggested-vid-img suggested-video-gtm" gtm-label="Asia Cup: Pakistan vs Oman, Preview|142829" height="164" src="https://static.cricbuzz.com/a/img/v1/290x164/i1/c750852/asia-cup-pakistan-vs-oman-pr.jpg" title="Asia Cup: Pakistan vs Oman, Preview" width="290"/>
+          <div class="cb-vid-duration">
+           6:30
+          </div>
+          <div class="cb-bkg-lin-grad cb-grad-lyo cb-hgt-72">
+           <div class="cb-pos-rel cb-pad-lft-rt cb-gap-12 align-center cb-single-operator-block" style="bottom:-30px;height: 40%;">
+            <div class="text-white align-center disp-flex">
+             ▶
+            </div>
+            <div>
+             <h4 class="text-white text-hvr-underline cb-subtext cb-font-14 cb-font-w-400" gtm-label="Asia Cup: Pakistan vs Oman, Preview|142829" style="max-width: 246px;">
+              Asia Cup: Pakistan vs Oman, Preview
+             </h4>
+            </div>
+           </div>
+          </div>
+         </div>
+        </a>
+       </div>
+       <div class="cb-col cb-col-100 cb-more-btn-cntnr">
+        <a class="cb-more-btn" href="/cricket-videos" role="button" target="_self" title="Click to view more videos">
+         More Videos
+        </a>
+       </div>
+      </div>
+      <div class="ad-unit cb-col" id="mpu2" style="margin:20px 0;">
+      </div>
+      <div class="cb-col cb-col-100 cb-sr-hist-pad" gtm-label="live scores" id="latest-news-mod">
+       <h4 class="cb-ltst-hdr">
+        LATEST NEWS
+       </h4>
+       <div class="cb-col cb-col-100 cb-lst-itm cb-pos-rel cb-lst-itm-sm">
+        <div class="cb-col cb-col-33 cb-pos-rel" itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject">
+         <meta content="100" itemprop="width"/>
+         <meta content="77" itemprop="height"/>
+         <meta content="https://static.cricbuzz.com/a/img/v1/100x77/i1/c750976/jason-holder-stunned-the-royal.jpg" itemprop="url"/>
+         <a href="/cricket-news/135566/holder-comes-clutch-as-patriots-live-to-breathe-another-day" target="_self" title="Holder comes clutch as Patriots live to breathe another day">
+          <img alt="Jason Holder stunned the Royals for the second time this season" class="cb-lst-img lazy-loading" height="77" itemprop="image" source="https://static.cricbuzz.com/a/img/v1/100x77/i1/c750976/jason-holder-stunned-the-royal.jpg" style="padding:0px;" title="Jason Holder stunned the Royals for the second time this season" width="100"/>
+         </a>
+        </div>
+        <div class="cb-col-67 cb-nws-lst-rt cb-col cb-col-text-container">
+         <div class="cb-ltst-wgt-hdr">
+          <a class="cb-nws-hdln-ancr text-hvr-underline" href="/cricket-news/135566/holder-comes-clutch-as-patriots-live-to-breathe-another-day" target="_self" title="Holder comes clutch as Patriots live to breathe another day">
+           Holder comes clutch as Patriots live to breathe another day
+          </a>
+         </div>
+         <div>
+          <span class="cb-nws-time">
+           29m ago
+          </span>
+         </div>
+        </div>
+       </div>
+       <span ad-content='&lt;div class="cb-col cb-col-100 cb-lst-itm cb-lst-itm-sm" style="border-bottom: 1px solid #ecebeb"&gt;&lt;div class="cb-col cb-col-33"&gt;&lt;a rel="noreferrer" target="_blank" href="[[clk]]"&gt;&lt;img style="width:90px;height:70px;" src="[[img]]" &gt;&lt;/a&gt;&lt;/div&gt;&lt;div class="cb-col-67 cb-nws-lst-rt cb-col cb-col-text-container"&gt;&lt;a rel="nofollow" target="_blank" href="[[clk]]" class="cb-nws-hdln-ancr text-hvr-underline"&gt;&lt;div class="cb-list-intro-text" style="height: 66px; overflow: hidden;"&gt;[[text]]&lt;/div&gt;&lt;div class="cb-list-sub-text ad-native-sponsor"&gt;[[sponsor]]&lt;img src="[[logo]]" class="pull-right" style="height:14px;" /&gt;&lt;/div&gt;&lt;/a&gt;&lt;div style="float:right;margin-top:-85px;"&gt;&lt;a rel="noreferrer" target="_blank" href="[[adchoicesClickURL]]"&gt;&lt;img src="[[adchoicesImgURL]]"/&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;' ad-loaded="false" class="ad-native ng-cloak" id="native_latest_news" ng-if='!$root.$GEO.isGeo("EU")'>
+       </span>
+       <div class="cb-col cb-col-100 cb-lst-itm cb-pos-rel cb-lst-itm-sm">
+        <div class="cb-col cb-col-33 cb-pos-rel" itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject">
+         <meta content="100" itemprop="width"/>
+         <meta content="77" itemprop="height"/>
+         <meta content="https://static.cricbuzz.com/a/img/v1/100x77/i1/c750888/towhid-hridoy-en-route-to-his.jpg" itemprop="url"/>
+         <a href="/cricket-news/135565/our-mentality-is-to-always-win-towhid-hridoy-asia-cup-2025-bangladesh-vs-hong-kong" target="_self" title="Our mentality is to always win: Hridoy ">
+          <img alt="Towhid Hridoy en route to his unbeaten 35" class="cb-lst-img lazy-loading" height="77" itemprop="image" source="https://static.cricbuzz.com/a/img/v1/100x77/i1/c750888/towhid-hridoy-en-route-to-his.jpg" style="padding:0px;" title="Towhid Hridoy en route to his unbeaten 35" width="100"/>
+         </a>
+        </div>
+        <div class="cb-col-67 cb-nws-lst-rt cb-col cb-col-text-container">
+         <div class="cb-ltst-wgt-hdr">
+          <a class="cb-nws-hdln-ancr text-hvr-underline" href="/cricket-news/135565/our-mentality-is-to-always-win-towhid-hridoy-asia-cup-2025-bangladesh-vs-hong-kong" target="_self" title="Our mentality is to always win: Hridoy ">
+           Our mentality is to always win: Hridoy
+          </a>
+         </div>
+         <div>
+          <span class="cb-nws-time">
+           2h ago
+          </span>
+         </div>
+        </div>
+       </div>
+       <div class="cb-col cb-col-100 cb-lst-itm cb-pos-rel cb-lst-itm-sm">
+        <div class="cb-col cb-col-33 cb-pos-rel" itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject">
+         <meta content="100" itemprop="width"/>
+         <meta content="77" itemprop="height"/>
+         <meta content="https://static.cricbuzz.com/a/img/v1/100x77/i1/c747291/while-constitutional-question.jpg" itemprop="url"/>
+         <a href="/cricket-news/135564/closed-session-open-war-internal-emails-show-usa-cricket-board-in-meltdown" target="_self" title="Closed session, open war: Internal emails show USA cricket board in meltdown">    
+          <img alt=" While constitutional questions simmer, players, coaches, and vendors remain in the dark" class="cb-lst-img lazy-loading" height="77" itemprop="image" source="https://static.cricbuzz.com/a/img/v1/100x77/i1/c747291/while-constitutional-question.jpg" style="padding:0px;" title=" While constitutional questions simmer, players, coaches, and vendors remain in the dark" width="100"/>
+         </a>
+        </div>
+        <div class="cb-col-67 cb-nws-lst-rt cb-col cb-col-text-container">
+         <div class="cb-ltst-wgt-hdr">
+          <a class="cb-nws-hdln-ancr text-hvr-underline" href="/cricket-news/135564/closed-session-open-war-internal-emails-show-usa-cricket-board-in-meltdown" target="_self" title="Closed session, open war: Internal emails show USA cricket board in meltdown">
+           Closed session, open war: Internal emails show USA cricket board in meltdown
+          </a>
+         </div>
+         <div>
+          <span class="cb-nws-time">
+           3h ago
+          </span>
+         </div>
+        </div>
+       </div>
+       <div class="cb-col cb-col-100 cb-lst-itm cb-pos-rel cb-lst-itm-sm">
+        <div class="cb-col cb-col-33 cb-pos-rel" itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject">
+         <meta content="100" itemprop="width"/>
+         <meta content="77" itemprop="height"/>
+         <meta content="https://static.cricbuzz.com/a/img/v1/100x77/i1/c750770/litton-das-struck-a-39-ball-59.jpg" itemprop="url"/>
+         <a href="/cricket-news/135563/litton-das-gives-bangladesh-winning-start" target="_self" title="Litton Das gives Bangladesh winning start">
+          <img alt="Litton Das struck a 39-ball 59 " class="cb-lst-img lazy-loading" height="77" itemprop="image" source="https://static.cricbuzz.com/a/img/v1/100x77/i1/c750770/litton-das-struck-a-39-ball-59.jpg" style="padding:0px;" title="Litton Das struck a 39-ball 59 " width="100"/>
+         </a>
+        </div>
+        <div class="cb-col-67 cb-nws-lst-rt cb-col cb-col-text-container">
+         <div class="cb-ltst-wgt-hdr">
+          <a class="cb-nws-hdln-ancr text-hvr-underline" href="/cricket-news/135563/litton-das-gives-bangladesh-winning-start" target="_self" title="Litton Das gives Bangladesh winning start">
+           Litton Das gives Bangladesh winning start
+          </a>
+         </div>
+         <div>
+          <span class="cb-nws-time">
+           9h ago
+          </span>
+         </div>
+        </div>
+       </div>
+       <div class="cb-col cb-col-100 cb-lst-itm cb-pos-rel cb-lst-itm-sm">
+        <div class="cb-col cb-col-33 cb-pos-rel" itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject">
+         <meta content="100" itemprop="width"/>
+         <meta content="77" itemprop="height"/>
+         <meta content="https://static.cricbuzz.com/a/img/v1/100x77/i1/c750769/hesson-is-in-charge-of-the-lim.jpg" itemprop="url"/>
+         <a href="/cricket-news/135562/it-is-a-developing-batting-lineup-mike-hesson-on-pakistan" target="_self" title="'It is a developing batting lineup' - Hesson on Pakistan">
+          <img alt="Hesson is in charge of the limited-over sides." class="cb-lst-img lazy-loading" height="77" itemprop="image" source="https://static.cricbuzz.com/a/img/v1/100x77/i1/c750769/hesson-is-in-charge-of-the-lim.jpg" style="padding:0px;" title="Hesson is in charge of the limited-over sides." width="100"/>
+         </a>
+        </div>
+        <div class="cb-col-67 cb-nws-lst-rt cb-col cb-col-text-container">
+         <div class="cb-ltst-wgt-hdr">
+          <a class="cb-nws-hdln-ancr text-hvr-underline" href="/cricket-news/135562/it-is-a-developing-batting-lineup-mike-hesson-on-pakistan" target="_self" title="'It is a developing batting lineup' - Hesson on Pakistan">
+           'It is a developing batting lineup' - Hesson on Pakistan
+          </a>
+         </div>
+         <div>
+          <span class="cb-nws-time">
+           9h ago
+          </span>
+         </div>
+        </div>
+       </div>
+       <div class="cb-col cb-col-100 cb-more-btn-cntnr">
+        <a class="cb-more-btn" href="/cricket-news" role="button" target="_self" title="Click to view more News">
+         More News
+        </a>
+       </div>
+      </div>
+      <style>
+       .cb-topic-header{margin-left:0px!important;} .cb-list-heading{font-weight:normal!important}
+      </style>
+      <div class="ad-unit cb-col" id="mpu3">
+      </div>
+     </div>
+    </div>
+    <style>
+     .cb-sptr{ margin-top: 15px; border-top: 1px solid #e3e6e3; padding: 10px 5px 10px 10px; }
+    </style>
+    <span class="ad-unit" id="skin_right" style="overflow:hidden;position:fixed;top:0;left:calc(50% + 490px);margin-left:3px;z-index:-99;">
+    </span>
+    <div class="disp-none" id="cb-plus-logout-msg" ng-controller="CBPlusAuth">
+    </div>
+   </div>
+  </div>
+  <div ng-cloak="" ng-if='$root.$GEO.isGeo("EU")'>
+   <div class="feedback-bar text-center cb-col-100 disp-none feedback-menu" id="feedback-bar" ng-controller="FeedbackCtrl" ng-init="show_feedback_menu();">
+    <span class="feedback-txt">
+     We use cookies to improve your experience on our site and to show you non-personalized ads. Find out more in our
+     <a href="/info/privacy" style="color:#4A90E2;">
+      privacy policy
+     </a>
+     and
+     <a href="/info/privacy#cookie_policy" style="color:#4A90E2;">
+      cookie policy
+     </a>
+    </span>
+    <button class="cb-feedback-btn blue-btn cb-cursor" id="close_feedback_btn" ng-click="close_feedback();">
+     OK
+    </button>
+   </div>
+  </div>
+  <footer id="FooterWraper" itemscope="" itemtype="http://schema.org/WPFooter" ng-controller="CBPlusAuth" ng-init="footerAppInfo()">
+   <div class="cb-footer cb-col-100 cb-col">
+    <div class="cb-ftr-cntnr">
+     <div class="cb-col-25 cb-col">
+      <a class="cb-hm-text" href="/" target="_self">
+       <img alt="Cricbuzz Logo" height="40" id="cb-logo-main-menu" itemprop="image" src="https://static.cricbuzz.com/images/cb_logo.svg" title="Cricbuzz Logo" width="101"/>
+      </a>
+     </div>
+     <div class="cb-col-25 cb-col">
+      <div class="text-left cb-font-16 text-bold">
+       MOBILE SITE &amp; APPS
+      </div>
+      <ul class="cb-ftr-ul">
+       <li class="cb-ftr-lst">
+        <a class="text-white" href="https://m.cricbuzz.com">
+         <span class="cb-mobile-site cb-ico">
+         </span>
+         <span class="cb-footer-list-rt">
+          m.cricbuzz.com
+         </span>
+        </a>
+       </li>
+       <li class="cb-ftr-lst">
+        <a class="text-white" href="https://play.google.com/store/apps/details?id=com.cricbuzz.android" rel="noopener noreferrer" target="_blank">
+         <span class="cb-app-android cb-ico">
+         </span>
+         <span class="cb-footer-list-rt">
+          Android
+         </span>
+        </a>
+       </li>
+       <li class="cb-ftr-lst">
+        <a class="text-white" href="https://itunes.apple.com/app/id360466413" rel="noopener noreferrer" target="_blank">
+         <span class="cb-app-ios cb-ico">
+         </span>
+         <span class="cb-footer-list-rt">
+          iOS
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="cb-col-25 cb-col">
+      <div class="text-left cb-font-16 text-bold">
+       FOLLOW US ON
+      </div>
+      <ul class="cb-ftr-ul">
+       <li class="cb-ftr-lst">
+        <a class="text-white" href="https://www.facebook.com/cricbuzz" rel="noopener noreferrer" target="_blank" title="Facebook">
+         <span class="cb-social-fb cb-ico">
+         </span>
+         <span class="cb-footer-list-rt">
+          facebook
+         </span>
+        </a>
+       </li>
+       <li class="cb-ftr-lst">
+        <a class="text-white" href="https://twitter.com/cricbuzz" rel="noopener noreferrer" target="_blank" title="Twitter">
+         <span class="cb-social-twitter cb-ico">
+         </span>
+         <span class="cb-footer-list-rt">
+          twitter
+         </span>
+        </a>
+       </li>
+       <li class="cb-ftr-lst">
+        <a class="text-white" href="https://www.youtube.com/channel/UCSRQXk5yErn4e14vN76upOw" rel="noopener noreferrer" target="_blank" title="Youtube">
+         <span class="cb-social-ytbe cb-ico">
+         </span>
+         <span class="cb-footer-list-rt">
+          youtube
+         </span>
+        </a>
+       </li>
+       <li class="cb-ftr-lst">
+        <a class="text-white" href="https://in.pinterest.com/cricbuzz/" rel="noopener noreferrer" target="_blank" title="Pinterest">
+         <span class="cb-social-pinterest cb-ico">
+         </span>
+         <span class="cb-footer-list-rt">
+          Pinterest
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="cb-col-25 cb-col">
+      <div class="text-left cb-font-16 text-bold">
+       COMPANY
+      </div>
+      <div class="cb-ftr-ul">
+       <div class="cb-ftr-lst">
+        <a class="text-white" href="/careers" title="Careers">
+         Careers
+        </a>
+       </div>
+       <div class="cb-ftr-lst">
+        <a class="text-white" href="/info/advertise" title="Advertise">
+         Advertise
+        </a>
+       </div>
+       <div class="cb-ftr-lst">
+        <a class="text-white" href="/product-blog/cricbuzz-mobile-apps-tv-ad-cricket-ka-keeda" rel="noopener noreferrer" title="Cricbuzz TV Ads">
+         Cricbuzz TV Ads
+        </a>
+       </div>
+       <div class="cb-ftr-lst" ng-if='$root.$GEO.isGeo("EU")'>
+        <a class="text-white cursor-pointer" onclick="window._sp_.loadPrivacyManagerModal(17869)" title="Privacy Preferences">
+         Privacy Preferences
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="cb-col-25 cb-col" ng-repeat="section in footer_menu_list" style="">
+      <div class="cb-ftr-lst" ng-repeat="link in section">
+       <a class="text-white" href="{{link.webLink}}" rel="nofollow" title="{{link.name}}">
+        {{ link.name }}
+       </a>
+      </div>
+     </div>
+     <div class="cb-col-100 cb-col cb-ftr-cpyrght">
+      © 2025 Cricbuzz.com, Cricbuzz Platforms Limited. All rights reserved |
+      <a class="cb-ftr-cpyrght text-hvr-underline" href="http://timesofindia.indiatimes.com/" rel="noopener noreferrer" target="_blank">
+       The Times of India
+      </a>
+      |
+      <a class="cb-ftr-cpyrght text-hvr-underline" href="http://navbharattimes.indiatimes.com/" rel="noopener noreferrer" target="_blank">
+       Navbharat Times
+      </a>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <div class="cb-col-100 cb-top-btn">
+   <div class="cb-text-white text-center text-bold" id="top-btn" title="Go to top">
+    <div>
+     Move to top
+    </div>
+    <div class="cb-pageup-arrow cb-ico">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   var script_tag = document.getElementsByTagName('script')[0]; (function() {   var cmin = document.createElement('script'); cmin.type = 'text/javascript'; cmin.async = true;  cmin.src = '/dist/js/cricbuzz.min.1756912000.js';  script_tag.parentNode.insertBefore(cmin, script_tag);   })();
+  </script>
+  <script>
+   var firebaseScript = [ 'https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js', 'https://www.gstatic.com/firebasejs/7.22.0/firebase-analytics.js' ]; var firebaseJS = []; for(var i =0; i < firebaseScript.length; i++) { firebaseJS[i] = document.createElement('script'); firebaseJS[i].type = 'text/javascript'; firebaseJS[i].async = true; firebaseJS[i].src = firebaseScript[i]; var stag = document.getElementsByTagName('script')[0]; stag.parentNode.insertBefore(firebaseJS[i], stag); } function initializeFirebaseJS(){ var firebaseConfig = { apiKey: "AIzaSyCTfMJJ_bLdOnp_OKuxi9ce8vmnzgqUHiM", authDomain: "cricbuzz-desktop.firebaseapp.com", databaseURL: "https://cricbuzz-desktop.firebaseio.com", projectId: "cricbuzz-desktop", storageBucket: "cricbuzz-desktop.appspot.com", messagingSenderId: "820819117977", appId: "1:820819117977:web:eabf3544ac136b1a643508", measurementId: "G-4H06J8XXQH" }; if(typeof(firebase) != undefined) { var cbPlusState = (localStorage.getItem('userState') != null) ? localStorage.getItem('userState') : 'NOTSET'; var cbPlusUId = (localStorage.getItem('userId') != null) ? localStorage.getItem('userId') : 'NOTSET'; var cbSubscriptionPlan      = (localStorage.getItem('planId') != null) ? 'PLAN'+localStorage.getItem('planId') : 'PLAN0'; cbSubscriptionPlan        = (localStorage.getItem('termId') != null) ? cbSubscriptionPlan+'-TERM'+localStorage.getItem('termId') : cbSubscriptionPlan; var is_premium_page = false; firebase.initializeApp(firebaseConfig); firebase.analytics().setUserProperties({ cb_user: cbPlusUId, cb_subscription_plan: cbSubscriptionPlan, cb_sub_user_state: cbPlusState }); firebase.analytics().logEvent('cb_screen_name', { cb_premium_screen: is_premium_page}); } else { setTimeout(initializeFirebaseJS, 3000); } } firebaseJS[1].onload = function() { initializeFirebaseJS(); }
+  </script>
+  <noscript>
+   <iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-PGNCT7" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=   '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);       })(window,document,'script','dataLayer','GTM-PGNCT7');
+  </script>
+  <script>
+   window.onerror = function(message, file, line) {     var sFormattedMessage = '[' + file + ' (' + line + ')] ' + message;     dataLayer.push({'EventAction': "Application",'EventLabel': sFormattedMessage,'event': 'Exceptions'});      }
+  </script>
+  <script type="text/javascript">
+   window.addEventListener("pageshow", (event) => {     setTimeout(() => {      _Analytics.clevertap.sendCTScreenViewEvent(CTEventName, CTEventObj);    }, 1000);       });
+  </script>
+ </body>
+</html>
