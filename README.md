@@ -2,9 +2,9 @@
 
 A simple Python CLI tool to fetch live weather data from any city using the OpenWeather API.
 
-[![Python Versions](https://img.shields.io/pypi/pyversions/scorefetch.svg)](https://pypi.org/project/scorefetch/)
-[![License](https://img.shields.io/github/license/bhatishan2003/scorefetch)](LICENSE)
-[![CI](https://github.com/bhatishan2003/scorefetch/actions/workflows/python-app.yml/badge.svg)](https://github.com/bhatishan2003/scorefetch/actions/workflows/python-app.yml)
+![Python Version](https://img.shields.io/badge/python-3.11-blue.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+[![Python CI](https://github.com/bhatishan2003/scorefetch/actions/workflows/python-app.yml/badge.svg)](https://github.com/bhatishan2003/scorefetch/actions/workflows/python-app.yml)
 
 ## Table of Contents <!-- omit in toc -->
 
@@ -16,12 +16,6 @@ A simple Python CLI tool to fetch live weather data from any city using the Open
 ---
 
 ## Installation
-
--   From pip
-
-    ```bash
-    pip install scorefetch
-    ```
 
 -   Clone the repository:
 
