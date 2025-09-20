@@ -1,6 +1,6 @@
 # scorefetch <!-- omit in toc -->
 
-A simple Python CLI tool to fetch live weather data from any city using the OpenWeather API.
+A simple Python CLI tool to fetch live cricket scores from cricbuzz.
 
 ![Python Version](https://img.shields.io/badge/python-3.11-blue.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
