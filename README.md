@@ -83,4 +83,4 @@ A simple Python CLI tool to fetch live weather data from any city using the Open
             scorefetch --match 1
             ```
 
-![Scorefetch-Demo](https://raw.githubusercontent.com/bhatishan2003/scorefetch/main/assets/scorefetch.gif)
+![Demo](https://raw.githubusercontent.com/bhatishan2003/demo/main/assets/demo.gif)
