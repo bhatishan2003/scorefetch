@@ -72,15 +72,16 @@ A simple Python CLI tool to fetch live weather data from any city using the Open
 
 -   Following commands should be entered to get live score
 
-        -   To get list of currently available matches.
+    -   To get list of currently available matches:
 
-            ```bash
-            scorefetch --list
-            ```
+        ```bash
+        scorefetch --list
+        ```
 
-        -   To get live match score we want to see from the list.
-            ```bash
-            scorefetch --match 1
-            ```
+    -   To get live match score we want to see from the list:
+
+        ```bash
+        scorefetch --match 1
+        ```
 
 ![Demo](https://raw.githubusercontent.com/bhatishan2003/demo/main/assets/demo.gif)
